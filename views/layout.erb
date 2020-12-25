@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='UTF-8' />
-    <title>Voting App</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-  </head>
-  <body>
-    <h1><%= @title %></h1>
-    <%= yield %>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<head>
+  <meta charset='UTF-8' />
+  <title>Voting App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <a class="navbar-brand" href="/">Foo Resturant</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/results">Results</a>
+      </li>
+
+    </ul>
+  </nav>
+  <h2 class="text-center p-2"> <%= @title%> </h2>
+  <%= yield %>
+  <script src="js/bootstrap.min.js"></script>
+</body>
 </html>

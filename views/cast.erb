@@ -1,2 +1,4 @@
-<p>You cast: <%= CHOICES[@vote] %></p>
-<p><a href='/results'>See the results!</a></p>
+<div class="container">
+    <h4>You Cast: <%= CHOICES[@vote] %></h4>
+    <button onclick="document.location='/results'" class="btn btn-success">See results</button>
+</div>
