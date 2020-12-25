@@ -28,7 +28,7 @@ post '/cast' do
 end
 
 get '/results' do
-  @title = 'Results so far:'
+  @title = 'Results So Far'
   @store = YAML::Store.new 'votes.yml'
   @votes = @store.transaction { @store['votes'] }
   erb :results
