@@ -1,16 +1,20 @@
-<p>What's for dinner?</p>
-
-<form action='cast' method='post'>
-  <ul>
-    <% CHOICES.each do |id, text| %>
+<div class="container bg-secondary" id="container">
+  <h4>What's for dinner?</h4>
+  <form action='cast' method='post'>
+    <ul>
+      <% CHOICES.each do |id, text| %>
       <li>
+
         <label>
           <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
           <%= text %>
         </label>
-      </li>
-    <% end %>
-  </ul>
 
-  <button type='submit'>Cast this vote!</button>
-</form>
+      </li>
+      <% end %>
+    </ul>
+    <div class="col text-center">
+      <button type='submit' class="btn btn-primary left">Cast this vote!</button>
+    </div>
+  </form>
+</div>
